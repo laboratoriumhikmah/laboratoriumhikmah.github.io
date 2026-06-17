@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Daftar Artikel - Laboratorium Hikmah</title>
+
+  <meta name="description" content="Daftar artikel Laboratorium Hikmah: kajian Islam, kitab kuning, ushul fiqih, tasawuf, psikologi, filsafat, dan ilmu pengetahuan." />
+
+  <style>
+    :root {
+      --bg: #f7f2e8;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #64748b;
+      --primary: #123c69;
+      --accent: #b8860b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 18px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f2f4f, #145374);
+      color: white;
+      padding: 46px 22px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      line-height: 1.25;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 16px auto 0;
+      color: #e5eef7;
+    }
+
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 12px 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      width: min(900px, 92%);
+      margin: 34px auto;
+    }
+
+    .intro {
+      background: var(--card);
+      padding: 28px;
+      border-radius: 18px;
+      box-shadow: 0 8px 24px rgba(15, 47, 79, 0.08);
+      border: 1px solid #eee;
+      margin-bottom: 28px;
+    }
+
+    .intro h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .article-list {
+      background: var(--card);
+      padding: 26px;
+      border-radius: 18px;
+      border: 1px solid #eee;
+      box-shadow: 0 8px 24px rgba(15, 47, 79, 0.06);
+    }
+
+    .article-item {
+      padding: 18px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .article-item:last-child {
+      border-bottom: none;
+    }
+
+    .article-item a {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.18rem;
+    }
+
+    .article-item a:hover {
+      text-decoration: underline;
+    }
+
+    .article-item p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    .category {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #f9f5ec;
+      color: #7a5a08;
+      font-size: 0.85rem;
+      border: 1px solid #ead7a5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      margin-top: 40px;
+      background: #0f2f4f;
+      color: #dbeafe;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 17px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .intro,
+      .article-list {
+        padding: 22px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Daftar Artikel</h1>
+    <p>Kumpulan tulisan Laboratorium Hikmah tentang Islam, kitab kuning, ushul fiqih, tasawuf, psikologi, filsafat, dan ilmu pengetahuan.</p>
+  </header>
+
+  <nav>
+    <a href="../index.html">Beranda</a>
+    <a href="../index.html#kajian">Kajian</a>
+    <a href="index.html">Artikel</a>
+    <a href="../index.html#tentang">Tentang</a>
+  </nav>
+
+  <main class="container">
+
+    <section class="intro">
+      <h2>Arsip Kajian Laboratorium Hikmah</h2>
+      <p>
+        Halaman ini menjadi tempat berkumpulnya artikel-artikel kajian. Nantinya setiap tulisan baru
+        akan ditambahkan di sini agar pembaca mudah menemukan tema yang ingin dipelajari.
+      </p>
+    </section>
+
+    <section class="article-list">
+
+      <div class="article-item">
+        <a href="tayammum.html">Kajian Bab Tayammum</a>
+        <p>Struktur fiqih tayammum, syarat, rukun, pembatal, serta hikmah thaharah darurat.</p>
+        <span class="category">Fiqih Thaharah</span>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Laboratorium Hikmah. Dibangun dengan GitHub Pages.
+  </footer>
+
+</body>
+</html>
