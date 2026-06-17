@@ -1,14 +1,277 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Laboratorium Hikmah</title>
-  <meta name="description" content="Laboratorium Hikmah adalah ruang kajian Islam, kitab kuning, filsafat, psikologi, dan ilmu pengetahuan.">
+
+  <meta name="description" content="Laboratorium Hikmah adalah ruang kajian Islam, kitab kuning, filsafat, psikologi, tasawuf, dan ilmu pengetahuan." />
+
+  <style>
+    :root {
+      --bg: #f7f2e8;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #64748b;
+      --primary: #123c69;
+      --accent: #b8860b;
+      --soft: #e8dcc3;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f2f4f, #145374);
+      color: white;
+      padding: 48px 22px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      max-width: 720px;
+      margin: 18px auto 0;
+      font-size: 1.05rem;
+      color: #e5eef7;
+    }
+
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #ddd;
+      padding: 12px 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      color: var(--primary);
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      font-size: 0.95rem;
+    }
+
+    .container {
+      width: min(1080px, 92%);
+      margin: 32px auto;
+    }
+
+    .hero {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 8px 24px rgba(15, 47, 79, 0.08);
+      border: 1px solid #eee;
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+
+    .arabic {
+      direction: rtl;
+      text-align: right;
+      font-size: 1.6rem;
+      color: #17324d;
+      background: #f9f5ec;
+      padding: 18px;
+      border-right: 5px solid var(--accent);
+      border-radius: 12px;
+      margin: 22px 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 22px;
+      border-radius: 16px;
+      border: 1px solid #eee;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .article-list {
+      margin-top: 34px;
+      background: var(--card);
+      padding: 26px;
+      border-radius: 18px;
+      border: 1px solid #eee;
+    }
+
+    .article-list h2 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+
+    .article-item {
+      padding: 14px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .article-item:last-child {
+      border-bottom: none;
+    }
+
+    .article-item a {
+      color: var(--primary);
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.08rem;
+    }
+
+    .article-item p {
+      margin: 6px 0 0;
+      color: var(--muted);
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      margin-top: 40px;
+      background: #0f2f4f;
+      color: #dbeafe;
+      font-size: 0.92rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .arabic {
+        font-size: 1.35rem;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Laboratorium Hikmah</h1>
-  <p>Selamat datang di Laboratorium Hikmah.</p>
-  <p>Website ini sedang dibangun sebagai ruang kajian Islam, kitab kuning, filsafat, psikologi, dan ilmu pengetahuan.</p>
+
+  <header>
+    <h1>Laboratorium Hikmah</h1>
+    <p>Ruang kajian Islam, kitab kuning, ushul fiqih, tasawuf, filsafat, psikologi, dan ilmu pengetahuan.</p>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#kajian">Kajian</a>
+    <a href="#artikel">Artikel</a>
+    <a href="#tentang">Tentang</a>
+  </nav>
+
+  <main class="container" id="beranda">
+
+    <section class="hero">
+      <h2>Selamat Datang di Laboratorium Hikmah</h2>
+
+      <p>
+        Website ini dibangun sebagai perpustakaan digital untuk menghubungkan khazanah Islam klasik
+        dengan pergulatan manusia modern: akal, jiwa, ilmu, spiritualitas, dan realitas sosial.
+      </p>
+
+      <div class="arabic">
+        رَبِّ زِدْنِي عِلْمًا وَارْزُقْنِي فَهْمًا
+      </div>
+
+      <p>
+        Di sini, kajian kitab kuning tidak hanya dibaca sebagai teks, tetapi juga dipahami melalui
+        struktur bahasa, ushul fiqih, mantiq, filsafat, psikologi, dan hikmah tazkiyatun nafs.
+      </p>
+    </section>
+
+    <section class="grid" id="kajian">
+
+      <div class="card">
+        <h3>Kitab Kuning</h3>
+        <p>Kajian fiqih, nahwu, sharaf, tafsir, tasawuf, dan syarah teks klasik secara bertahap.</p>
+      </div>
+
+      <div class="card">
+        <h3>Ushul Fiqih</h3>
+        <p>Analisis dalalah lafaz, qiyas, illat, mafhum, manthuq, dan struktur istinbath hukum.</p>
+      </div>
+
+      <div class="card">
+        <h3>Tasawuf & Psikologi</h3>
+        <p>Membaca jiwa manusia melalui tazkiyah, akhlak, kesadaran, kebiasaan, dan perubahan diri.</p>
+      </div>
+
+      <div class="card">
+        <h3>Filsafat & Sains</h3>
+        <p>Menjembatani wahyu, akal, epistemologi, ilmu modern, dan pencarian makna hidup.</p>
+      </div>
+
+    </section>
+
+    <section class="article-list" id="artikel">
+      <h2>Artikel Terbaru</h2>
+
+      <div class="article-item">
+        <a href="#">Kajian Bab Tayammum</a>
+        <p>Struktur fiqih tayammum, syarat, rukun, pembatal, dan problem kontemporer.</p>
+      </div>
+
+      <div class="article-item">
+        <a href="#">Mafhum al-Shifah dalam Ushul Fiqih</a>
+        <p>Analisis dalalah sifat, khilaf ulama, dan fondasi logis dalam istinbath.</p>
+      </div>
+
+      <div class="article-item">
+        <a href="#">Psikologi Perubahan Manusia</a>
+        <p>Hubungan habit formation, mujahadatun nafs, dan tazkiyatun nafs.</p>
+      </div>
+
+    </section>
+
+    <section class="hero" id="tentang" style="margin-top: 34px;">
+      <h2>Tentang Laboratorium Hikmah</h2>
+      <p>
+        Laboratorium Hikmah adalah ruang belajar untuk merawat tradisi keilmuan Islam,
+        memperdalam nalar, membersihkan jiwa, dan membaca dunia modern dengan cahaya ilmu.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 Laboratorium Hikmah. Dibangun dengan GitHub Pages.
+  </footer>
+
 </body>
 </html>
